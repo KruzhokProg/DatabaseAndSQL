@@ -31,3 +31,40 @@ CREATE TABLE Прием(
 	дата_осмотра date NOT NULL,
 	время_приема time NOT NULL
 );
+
+CREATE TABLE Лекарство(
+	артикул varchar(100) PRIMARY KEY,
+	название varchar(500) NOT NULL,
+	цена money NOT NULL,
+	по_рецепту bool NOT NULL
+);
+
+CREATE TABLE ЛекарствоОтБолезни(
+	артикул_лекарства varchar(100) REFERENCES Лекарство(артикул),
+	код_болезни int REFERENCES Болезнь(код),
+	CONSTRAINT комб_ключ_артикул_лекарства_код_болезни PRIMARY KEY(артикул_лекарства, код_болезни)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
