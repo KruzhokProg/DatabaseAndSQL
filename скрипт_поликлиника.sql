@@ -45,6 +45,21 @@ CREATE TABLE ЛекарствоОтБолезни(
 	CONSTRAINT комб_ключ_артикул_лекарства_код_болезни PRIMARY KEY(артикул_лекарства, код_болезни)
 );
 
+CREATE TABLE Назначение(
+	артикул_лекарства varchar(100) NOT NULL REFERENCES Лекарство(артикул),
+	код_приема int NOT NULL REFERENCES Прием(код),
+	CONSTRAINT уникальный_ключ_назначение PRIMARY KEY(артикул_лекарства, код_приема)
+);
+
+CREATE TABLE ИсторияБолезни(
+	код int PRIMARY KEY,
+	номер_карты int NOT NULL REFERENCES Пациент(номер_карты),
+	код_болезни int NOT NULL REFERENCES Болезнь(код),
+	дата_заболевания date NOT NULL,
+	дата_выздоровления date NOT NULL,
+	описание_лечения text
+);
+
 
 
 
