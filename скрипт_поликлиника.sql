@@ -60,6 +60,17 @@ CREATE TABLE ИсторияБолезни(
 	описание_лечения text
 );
 
+-- DROP TABLE ЛекарствоОтБолезни;
+-- DROP TABLE Назначение;
+-- DROP TABLE Лекарство;
+-- DROP TABLE ИсторияБолезни;
+-- DROP TABLE Прием;
+-- DROP TABLE Врач;
+-- DROP TABLE Специальность;
+-- DROP TABLE Болезнь;
+-- DROP TABLE Пациент;
+
+
 
 
 
