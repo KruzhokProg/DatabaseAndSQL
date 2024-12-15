@@ -15,3 +15,6 @@
 
  ##  Решения заданий от 15.12.2024
  Решения: https://github.com/fang313/SQL
+ДЗ: 
+https://sql-academy.org/ru/trainer/tasks/38
+https://sql-academy.org/ru/trainer/tasks/74
