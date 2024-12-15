@@ -14,4 +14,4 @@
 ### Добить оставшиеся задания из файла упражнения по книге SQL сборник рецептов.docx
 
  ##  Решения заданий от 15.12.2024
- Решения: https://github.com/fang313/SQL![image](https://github.com/user-attachments/assets/9fe2ad63-0cde-4208-8e5a-06955309f7c7)
+ Решения: https://github.com/fang313/SQL
